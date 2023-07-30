@@ -1779,6 +1779,7 @@ class ObsClient(_BasicClient):
                         key = '{0}/'.format(objectKey) + util.safe_trans_to_gb2312(f).decode('GB2312').encode('UTF-8')
                 result = self.putFile(bucketName, key, __file_path, metadata, headers,
                                       extensionHeaders=extensionHeaders)
+                headers['contentType'] = None
                 results.append((key, result))
             return results
 

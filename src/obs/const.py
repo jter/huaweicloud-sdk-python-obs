@@ -21,7 +21,7 @@ READ_ONCE_LENGTH = 65536
 CONTENT_LENGTH_HEADER = 'Content-Length'
 CONTENT_TYPE_HEADER = 'Content-Type'
 CONTENT_MD5_HEADER = 'Content-MD5'
-CACHE_CONTROL_HEADER = 'Cache-Control'
+CACHE_CONTROL_HEADER = 'Cache-Control'  # type: str
 CONTENT_DISPOSITION_HEADER = 'Content-Disposition'
 CONTENT_ENCODING_HEADER = 'Content-Encoding'
 CONTENT_LANGUAGE_HEADER = 'Content-Language'
@@ -297,7 +297,7 @@ MIME_TYPES = {
     'mid': 'audio/midi',
     'midi': 'audio/midi',
     'mov': 'video/quicktime',
-    'mp3': 'audio/mpeg',
+    'mp3': 'audio/mp3',
     'mp4': 'video/mp4',
     'mp4a': 'audio/mp4',
     'mp4v': 'video/mp4',
